@@ -1,0 +1,64 @@
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('lspd_pie_module.json')
+        .then(response => response.json())
+        .then(data => {
+            displayModule(data);
+            setupQuiz(data.quiz);
+        })
+        .catch(error => console.error('Erreur de chargement du fichier JSON:', error));
+});
+
+function displayModule(data) {
+    const moduleContent = document.getElementById('module-content');
+    const quizSection = document.getElementById('quiz-section');
+
+    // Affichage du contenu théorique
+    data.content.forEach(section => {
+        const sectionElement = document.createElement('div');
+        sectionElement.classList.add('section');
+        sectionElement.innerHTML = `
+            <h2>${section.title}</h2>
+            <p>${section.text}</p>
+        `;
+        moduleContent.appendChild(sectionElement);
+    });
+
+    // Affichage du titre du quiz
+    quizSection.innerHTML = '<h2>Quiz sur l\'utilisation du PIE</h2>';
+}
+
+function setupQuiz(quiz) {
+    const quizSection = document.getElementById('quiz-section');
+    
+    quiz.forEach((question, index) => {
+        const questionElement = document.createElement('div');
+        questionElement.classList.add('quiz-question');
+        questionElement.innerHTML = `
+            <p>${question.question}</p>
+            ${question.choices.map((choice, i) => 
+                `<button onclick="checkAnswer(${index}, ${i})">${choice}</button>`
+            ).join('')}
+        `;
+        quizSection.appendChild(questionElement);
+    });
+}
+
+let userAnswers = [];
+
+function checkAnswer(questionIndex, answerIndex) {
+    const quiz = JSON.parse(localStorage.getItem('quizData')).quiz;
+    const correctAnswer = quiz[questionIndex].answer;
+    const chosenAnswer = quiz[questionIndex].choices[answerIndex];
+    
+    if (chosenAnswer === correctAnswer) {
+        alert('Bonne réponse !');
+        userAnswers[questionIndex] = true;
+    } else {
+        alert('Mauvaise réponse !');
+        userAnswers[questionIndex] = false;
+    }
+
+    if (userAnswers.length === quiz.length) {
+        alert('Félicitations, vous avez terminé le quiz !');
+    }
+}
