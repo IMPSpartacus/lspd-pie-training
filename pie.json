@@ -1,0 +1,56 @@
+{
+    "moduleId": "pie_training",
+    "title": "Pistolet à Impulsion Électrique (PIE)",
+    "description": "Comprendre l’utilisation du PIE X26, ses spécifications, et les situations légales d’usage.",
+    "type": "formation_theorique",
+    "content": [
+      {
+        "type": "intro",
+        "text": "Officier, pour maîtriser l’utilisation du Pistolet à Impulsion Électrique (PIE), vous devez comprendre ses spécifications, son cadre d’utilisation, et les interdictions liées à son usage dans les situations critiques."
+      },
+      {
+        "type": "section",
+        "title": "Qu'est-ce qu’un Pistolet à Impulsion Électrique (PIE) ?",
+        "text": "Le PIE X26 est une arme non létale qui propulse deux électrodes reliées à des filins isolés à une distance maximale de 7,60 mètres. La décharge délivrée (50 000 volts et 2 milliampères) bloque temporairement le système nerveux de la cible.\n\nCaractéristiques :\n- Longueur : 18,5 cm\n- Cadence de tir : 1 tir/5s\n- Portée maximale : 7,60 mètres"
+      },
+      {
+        "type": "section",
+        "title": "Dans quelles situations ai-je le droit de le sortir ?",
+        "text": "Le recours au PIE est autorisé dans les situations suivantes :\n\n1. **Légitime défense** : Utilisation de la force pour se défendre contre une atteinte injustifiée envers soi-même ou autrui.\n2. **État de nécessité** : En cas de danger imminent envers soi-même, autrui ou un bien.\n3. **Contrainte légitime** : Lorsqu’un suspect s’oppose à son interpellation, notamment lors d'un crime ou délit flagrant."
+      },
+      {
+        "type": "section",
+        "title": "Les interdictions du PIE X26 et X12",
+        "text": "Les interdictions liées à l’usage du PIE :\n\n- **Viser la tête ou le cou** est interdit (seule la zone du torse est autorisée).\n- **Il est interdit de tirer sur une personne dans un véhicule en mouvement.**\n- **Il est interdit de tirer sur une personne armée.**\n- **Il est interdit de tirer sur une personne dans l'eau ou mouillée** (X-26 uniquement).\n- **Il est interdit de tirer sur une personne ayant des substances inflammables ou explosives."
+      }
+    ],
+    "quiz": [
+      {
+        "question": "Quel est le nom du modèle de PIE utilisé par le LSPD ?",
+        "choices": ["PIE X12", "PIE X26", "Taser 5000", "Shockwave"],
+        "answer": "PIE X26"
+      },
+      {
+        "question": "Quelle est la portée maximale d’un tir avec le PIE X26 ?",
+        "choices": ["5 mètres", "10 mètres", "7,60 mètres", "15 mètres"],
+        "answer": "7,60 mètres"
+      },
+      {
+        "question": "Il est interdit de viser quelle zone avec le PIE X26 ?",
+        "choices": ["Le bras", "Le ventre", "La tête ou le cou", "Les jambes"],
+        "answer": "La tête ou le cou"
+      },
+      {
+        "question": "Dans quelle situation peut-on utiliser le PIE pour maîtriser un suspect ?",
+        "choices": ["Lors d’un contrôle de routine", "Lorsqu’un suspect refuse de s’arrêter et est armé", "Lorsqu’un suspect s’oppose à son interpellation pour un délit flagrant", "Lors d'une simple fuite"],
+        "answer": "Lorsqu’un suspect s’oppose à son interpellation pour un délit flagrant"
+      },
+      {
+        "question": "Quelles zones sont autorisées à viser avec le PIE X26 ?",
+        "choices": ["La tête", "Le torse", "Les jambes", "Les bras"],
+        "answer": "Le torse"
+      }
+    ],
+    "successMessage": "Félicitations, Officier ! Vous avez maîtrisé l’utilisation du PIE X26 et comprenez son cadre légal d’utilisation. Vous êtes maintenant prêt à intervenir de manière responsable et sécurisée avec cet équipement."
+  }
+  
